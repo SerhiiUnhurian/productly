@@ -1,0 +1,24 @@
+{
+  "name": "Productly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerhiiUnhurian/productly.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerhiiUnhurian/productly/issues"
+  },
+  "homepage": "https://github.com/SerhiiUnhurian/productly#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

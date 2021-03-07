@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @extend %font-primary;
+  @include font(1.6rem, 2.6rem, normal);
+  color: $color-text;
+}
+
+h1 {
+  @extend %color-heading;
+  @extend %font-secondary;
+  @include font(4.4rem, 5.4rem);
+}
+
+h2 {
+  @extend %color-heading;
+  @include font(3.4rem, 4.6rem);
+}
+
+h3 {
+  @extend %color-heading;
+  @include font(2.4rem, 3.4rem);
+}
+
+h4 {
+  @extend %color-heading;
+  @include font(2.2rem, 3rem, 600);
+}
+
+h5 {
+  @include font(1.6rem, 2.6rem);
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+// TODO: Cursor pointer on tag hover
+
+.tags {
+  display: flex;
+
+  > .tag {
+    margin-right: 7px;
+  }
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  @include font(1.3rem, 2.8rem, normal);
+
+  &--primary {
+    background: $color-tag;
+  }
+  &--selected {
+    color: $color-light;
+    background: $color-primary;
+  }
+  &--outlined {
+    border: 1px solid $color-border;
+  }
+}

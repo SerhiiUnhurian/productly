@@ -1,0 +1,46 @@
+.btn {
+  @extend %font-primary;
+  @include font($size: inherit, $height: 2.2rem, $weight: bold);
+  padding: 11px 25px 13px;
+  border-radius: 4px;
+  @extend %transition;
+  cursor: pointer;
+
+  &--outlined {
+    border: 1px solid $color-border;
+    color: $color-heading;
+
+    &:hover {
+      background: $color-border;
+    }
+  }
+
+  &--primary {
+    background: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-light;
+
+    &:hover {
+      background: $color-accent;
+      border-color: $color-accent;
+    }
+  }
+}
+
+.link-btn {
+  color: $color-primary;
+  @extend %font-secondary;
+  @include font($size: inherit, $height: 2.4rem, $weight: 600);
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+
+  // TODO: Hover state
+  // &:hover {
+  //   color: $color-accent;
+  // }
+}
+
+.link-btn__text {
+  margin-left: 9px;
+}

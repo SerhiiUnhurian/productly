@@ -1,0 +1,27 @@
+.tools__wrapper {
+  padding: 80px 0 90px;
+  background-image: url('../../images/backgrounds/tools-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.tools__heading {
+  max-width: 462px;
+  margin: auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.tools__button {
+  margin-top: 60px;
+  text-align: center;
+}
+
+// Block tool
+.tool__title {
+  margin: 30px 0 16px;
+}
+
+.tool__text {
+  margin: 0;
+}

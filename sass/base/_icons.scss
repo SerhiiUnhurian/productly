@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-square {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+
+  &--violet {
+    background: $color-violet;
+  }
+  &--red {
+    background: $color-red;
+  }
+  &--blue {
+    background: $color-blue;
+  }
+  &--yellow {
+    background: $color-yellow;
+  }
+}
+
+.icon--play {
+  background-image: url('../../images/icons/play.svg');
+  width: 18px;
+  height: 19px;
+}
+
+.icon--arrow {
+  background-image: url('../../images/icons/arrow.svg');
+  width: 12px;
+  height: 17px;
+}
+
+.icon--snake {
+  background-image: url('../../images/icons/snake.svg');
+  width: 18px;
+  height: 14px;
+}
+
+.icon--heart {
+  background-image: url('../../images/icons/heart.svg');
+  width: 17px;
+  height: 15px;
+}
+
+.icon--clock {
+  background-image: url('../../../images/icons/clock.svg');
+  width: 15px;
+  height: 17px;
+}
+
+.icon--phone {
+  background-image: url('../../images/icons/phone.svg');
+  width: 13px;
+  height: 13px;
+}
+
+.icon--letter {
+  background-image: url('../../images/icons/letter.svg');
+  width: 11px;
+  height: 8px;
+}
