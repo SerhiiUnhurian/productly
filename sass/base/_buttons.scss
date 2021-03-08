@@ -9,6 +9,7 @@
   &--outlined {
     border: 1px solid $color-border;
     color: $color-heading;
+    background: $color-light;
 
     &:hover {
       background: $color-border;
