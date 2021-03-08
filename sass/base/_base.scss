@@ -39,6 +39,11 @@ h5 {
   @include font(1.6rem, 2.6rem);
 }
 
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
 .block-shadowed {
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
