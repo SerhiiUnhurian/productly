@@ -453,7 +453,7 @@ template {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.hero__description, .link-btn, h1 {
+.hero__description, .footer-navigation__links, .link-btn, h1 {
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -461,7 +461,7 @@ h4, h3, h2, h1 {
   color: #2f281e;
 }
 
-.navigation__link, .btn {
+.navigation__link, .footer-navigation__links a, .btn {
   transition: all 0.2s;
 }
 
@@ -515,6 +515,11 @@ h5 {
 a {
   color: #544837;
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
 }
 
 .block-shadowed {
@@ -715,6 +720,32 @@ a {
 }
 .layout--1x2 > * {
   flex-basis: 48%;
+}
+
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__heading {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+  font-size: inherit;
+  line-height: 3.5rem;
+  font-weight: normal;
+}
+.footer-navigation__links a:hover {
+  color: #ff9900;
 }
 
 .navigation {
