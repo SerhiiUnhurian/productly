@@ -36,6 +36,31 @@
   }
 }
 
+// Block strategy
+.strategy {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &--spaned {
+    grid-column-start: span 2;
+
+    @include media-mobile {
+      grid-column-start: span 1;
+    }
+  }
+}
+
+.strategy__image {
+  max-width: 100%;
+}
+
+.strategy__title {
+  flex-grow: 1;
+  margin: 0 0 29px;
+  text-align: left;
+}
+
 .strategy__content {
   flex-grow: 1;
   display: flex;
@@ -51,34 +76,10 @@
   }
 }
 
-.strategy {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-
-  &--spaned {
-    grid-column-start: span 2;
-
-    @include media-mobile {
-      grid-column-start: span 1;
-    }
-  }
-}
-
-.strategy__title {
-  flex-grow: 1;
-  margin: 0 0 29px;
-  text-align: left;
-}
-
 .strategy__tags {
   margin: 0 -0.7rem -0.7rem 0;
 
   > .tag {
     margin-bottom: 0.7rem;
   }
-}
-
-.strategy__image {
-  max-width: 100%;
 }

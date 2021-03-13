@@ -1,3 +1,7 @@
+.tools {
+  text-align: center;
+}
+
 .tools__wrapper {
   padding-top: 80px;
   padding-bottom: 90px;
@@ -10,17 +14,51 @@
   max-width: 462px;
   margin: auto;
   margin-bottom: 70px;
-  text-align: center;
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 43px;
+  }
 }
 
-.tools__button {
-  margin-top: 60px;
-  text-align: center;
+.tools__container {
+  .tool {
+    margin-bottom: 60px;
+
+    @include media-tablet {
+      flex-basis: 46%;
+      margin-bottom: 54px;
+    }
+
+    @include media-mobile {
+      flex-basis: 100%;
+      margin-bottom: 47px;
+    }
+  }
 }
 
 // Block tool
+.tool {
+  text-align: left;
+
+  @include media-tablet {
+    text-align: center;
+  }
+}
+
 .tool__title {
   margin: 30px 0 16px;
+
+  @include media-tablet {
+    margin: 20px 0 6px;
+  }
+
+  @include media-mobile {
+    margin: 11px 0 2px;
+  }
 }
 
 .tool__text {

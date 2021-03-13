@@ -5,6 +5,7 @@
   border-radius: 4px;
   @extend %transition;
   cursor: pointer;
+  white-space: nowrap;
 
   &--outlined {
     border: 1px solid $color-border;
@@ -35,6 +36,7 @@
   vertical-align: middle;
   display: inline-flex;
   align-items: center;
+  white-space: nowrap;
 
   // TODO: Hover state
   // &:hover {
