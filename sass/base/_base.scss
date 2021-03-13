@@ -18,21 +18,37 @@ h1 {
   @extend %color-heading;
   @extend %font-secondary;
   @include font(4.4rem, 5.4rem);
+
+  @include media-mobile {
+    @include font(3.2rem, 4.2rem);
+  }
 }
 
 h2 {
   @extend %color-heading;
   @include font(3.4rem, 4.6rem);
+
+  @include media-mobile {
+    @include font(2.4rem, 3.3rem);
+  }
 }
 
 h3 {
   @extend %color-heading;
   @include font(2.4rem, 3.4rem);
+
+  @include media-mobile {
+    @include font(2.1rem, 3.1rem);
+  }
 }
 
 h4 {
   @extend %color-heading;
   @include font(2.2rem, 3rem, 600);
+
+  @include media-mobile {
+    @include font(2rem, 2.7rem);
+  }
 }
 
 h5 {

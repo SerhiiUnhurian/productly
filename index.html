@@ -16,7 +16,16 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a href="#" class="logo"><img src="images/logo.png" alt="Productly LLC logo"></a>
+      <div class="header__logo">
+        <div class="burger header__burger">
+          <div class="burger__line"></div>
+        </div>
+        <a href="#" class="logo">
+          <object class="logo__object" data="./images/logo.svg" type="image/svg+xml">
+            <img src="images/logo.png" alt="Productly LLC logo">
+          </object>
+        </a>
+      </div>
       <nav class="header__navigation">
         <ul class="navigation">
           <li class="navigation__link">Home</li>
@@ -31,6 +40,7 @@
       </div>
     </div>
   </header>
+
   <section class="hero">
     <div class="wrapper hero__wrapper">
       <div class="hero__content">
@@ -48,10 +58,11 @@
       <img class="hero__image" src="images/hero/hero.png" alt="Happy people jumping">
     </div>
   </section>
+
   <section class="tools">
     <div class="wrapper tools__wrapper">
       <h2 class="tools__heading">We design tools to unveil your superpowers</h2>
-      <div class="layout--1x4">
+      <div class="layout-4-cols">
         <div class="tool">
           <div class="tool__icon">
             <span class="icon-square icon-square--violet">
@@ -94,6 +105,7 @@
       </div>
     </div>
   </section>
+
   <section class="strategies">
     <div class="wrapper">
       <h2 class="strategies__heading">Marketing Strategies</h2>
@@ -104,7 +116,7 @@
         <span class="tag tag--outlined">Culture</span>
         <span class="tag tag--outlined">Design</span>
       </div>
-      <div class="layout--1x3">
+      <div class="grid-3-cols strategies__grid">
         <article class="strategy block-shadowed">
           <img class="strategy__image" src="images/strategies/1.jpg" alt="strategy">
           <div class="strategy__content">
@@ -135,7 +147,7 @@
             </div>
           </div>
         </article>
-        <article class="strategy block-shadowed">
+        <article class="strategy strategy--spaned block-shadowed">
           <img class="strategy__image" src="images/strategies/4.jpg" alt="strategy">
           <div class="strategy__content">
             <h3 class="strategy__title">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back
@@ -159,6 +171,7 @@
       </div>
     </div>
   </section>
+
   <section class="about-us">
     <div class="wrapper">
       <h2 class="about-us__heading">About Us</h2>
@@ -170,7 +183,7 @@
         conversion
         action (e.g., signing up for your newsletter, making a purchase).
       </p>
-      <div class="layout--1x3 about-us__employees">
+      <div class="layout-3-cols about-us__employees">
         <div class="employee block-shadowed">
           <div class="employee__content">
             <h5 class="employee__name">Kathy Rosenberg</h5>
@@ -198,10 +211,11 @@
       </div>
     </div>
   </section>
+
   <section class="contact-us">
     <div class="wrapper">
       <h2 class="contact-us__heading">Contact Us</h2>
-      <div class="layout--1x2">
+      <div class="layout-2-cols">
         <div class="contact-us__content">
           <p class="contact-us__description">
             Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It
@@ -222,7 +236,7 @@
         </div>
         <div class="contact-us__form">
           <form action="POST">
-            <div class="layout--1x2 contact-us__form-line">
+            <div class="layout-2-cols contact-us__form-line">
               <input type="text" name="name" placeholder="Your name">
               <input type="email" name="email" placeholder="Your email">
             </div>
@@ -236,10 +250,15 @@
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="wrapper footer__wrapper">
-      <a href="#" class="logo"><img src="images/logo.png" alt="Productly LLC logo"></a>
-      <div class="layout--1x3 footer-navigation">
+      <a href="#" class="logo">
+        <object class="logo__object" data="./images/logo.svg" type="image/svg+xml">
+          <img src="images/logo.png" alt="Productly LLC logo">
+        </object>
+      </a>
+      <div class="layout-3-cols footer-navigation">
         <div class="footer-navigation__column">
           <h4 class="footer-navigation__heading">Quick Links</h4>
           <ul class="footer-navigation__links">

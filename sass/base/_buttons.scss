@@ -1,6 +1,6 @@
 .btn {
   @extend %font-primary;
-  @include font($size: inherit, $height: 2.2rem, $weight: bold);
+  @include font($height: 2.2rem);
   padding: 11px 25px 13px;
   border-radius: 4px;
   @extend %transition;
@@ -31,7 +31,7 @@
 .link-btn {
   color: $color-primary;
   @extend %font-secondary;
-  @include font($size: inherit, $height: 2.4rem, $weight: 600);
+  @include font($height: 2.4rem, $weight: 600);
   vertical-align: middle;
   display: inline-flex;
   align-items: center;

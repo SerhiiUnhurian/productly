@@ -1,11 +1,16 @@
-.layout--1x4 {
+.layout-4-cols {
   @include columns($width: 21%);
 }
 
-.layout--1x3 {
+.layout-3-cols {
   @include columns($width: 30%);
 }
 
-.layout--1x2 {
+.layout-2-cols {
   @include columns($width: 48%);
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

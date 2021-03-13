@@ -2,9 +2,10 @@
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
 
   > .tag {
-    margin-right: 7px;
+    margin-right: 0.7rem;
   }
 }
 

@@ -7,12 +7,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media-tablet {
+    padding-left: 24px;
+  }
 }
 
-.header__buttons > .btn {
-  margin-left: 14px;
+.header__logo {
+  display: flex;
+  align-items: center;
+
+  @include media-mobile {
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+  }
 }
 
-.header__buttons :first-child {
-  margin: 0;
+.header__burger {
+  margin-right: 37px;
+
+  @include media-mobile {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.header__navigation {
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.header__buttons {
+  @include media-mobile {
+    display: none;
+  }
+
+  > .btn {
+    margin-left: 14px;
+  }
+
+  :first-child {
+    margin: 0;
+  }
 }

@@ -1,0 +1,36 @@
+%burger-line {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: $color-burger;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.burger {
+  display: none;
+  width: 31px;
+  height: 25px;
+  position: relative;
+  vertical-align: middle;
+
+  @include media-tablet {
+    display: inline-block;
+  }
+
+  &::before {
+    @extend %burger-line;
+    top: 0;
+  }
+
+  &::after {
+    @extend %burger-line;
+    bottom: 0;
+  }
+}
+
+.burger__line {
+  @extend %burger-line;
+  top: calc(50% - 1.5px);
+}
