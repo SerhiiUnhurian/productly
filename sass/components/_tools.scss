@@ -3,11 +3,18 @@
 }
 
 .tools__wrapper {
-  padding-top: 80px;
   padding-bottom: 90px;
   background-image: url('../../images/backgrounds/tools-bg.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  @include media-tablet {
+    padding-bottom: 53px;
+  }
+
+  @include media-mobile {
+    padding-bottom: 47px;
+  }
 }
 
 .tools__heading {
