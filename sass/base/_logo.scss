@@ -3,8 +3,13 @@
 }
 
 .logo__object {
-  width: 160px;
-  height: 30px;
+  width: 191px;
+  height: 32px;
+
+  @include media-mobile {
+    width: 158px;
+    height: 26px;
+  }
 }
 
 .logo-path {
